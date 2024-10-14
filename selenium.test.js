@@ -42,7 +42,7 @@ describe("Selenium Tests", () => {
         await driver.findElement(By.id("formSubmit")).click();
         const text = await driver.findElement(By.id("formMessage")).getText();
 
-        expect(text).toEqual(`More info coming to ${email} a`);
+        expect(text).toEqual(`More info coming to ${email}`);
         await setDelay();
     });
 });
